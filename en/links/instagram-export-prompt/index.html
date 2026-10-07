@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Prompt: analyze your Instagram data export</title><meta name="description" content="Three steps: request your export, pick the right files, paste the prompt into any AI chat — an analysis with no made-up numbers"><link rel="canonical" href="https://natalie-chmurova.github.io/en/links/instagram-export-prompt/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#EFE9DF"><meta property="og:type" content="website"><meta property="og:title" content="Prompt: analyze your Instagram data export"><meta property="og:description" content="Three steps: request your export, pick the right files, paste the prompt into any AI chat — an analysis with no made-up numbers"><meta property="og:url" content="https://natalie-chmurova.github.io/en/links/instagram-export-prompt/"><meta property="og:image" content="https://natalie-chmurova.github.io/og.jpg?v=35628582"><meta name="twitter:card" content="summary_large_image"><link rel="alternate" hreflang="ru" href="https://natalie-chmurova.github.io/links/instagram-export-prompt/"><link rel="alternate" hreflang="en" href="https://natalie-chmurova.github.io/en/links/instagram-export-prompt/"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/Base.CUIeItgS.css"></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="/en/">Natalia Chmurova</a><div class="lang-switch"><a href="/links/instagram-export-prompt/" hreflang="ru">RU</a><span aria-hidden="true">·</span><span class="on">EN</span></div><nav aria-label="Sections"><a href="/en/">About</a><a href="/en/links/" aria-current="page">Useful</a><a href="/product/">Product</a></nav></header><main id="main"><div class="page-head"><a class="mono" href="/en/links/">← Useful</a></div><section class="section" style="padding-top: 10px"><article class="card full"><div><div class="chips"><span class="chip topic">prompts</span></div><h3>Prompt: analyze your Instagram data export</h3><p class="why">Three steps: request your export, pick the right files, paste the prompt into any AI chat — an analysis with no made-up numbers</p><ul class="links-list"><li><span><a class="label" href="https://deepseek.com" target="_blank" rel="noopener">DeepSeek</a><span class="domain">deepseek.com</span></span><span class="note">fine for the basic set of files</span></li><li><span><a class="label" href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a><span class="domain">chatgpt.com</span></span><span class="note">reads large files, so the extended set works</span></li><li><span><a class="label" href="https://claude.ai" target="_blank" rel="noopener">Claude</a><span class="domain">claude.ai</span></span><span class="note">reads large files, so the extended set works</span></li></ul><div class="card-body"><p>This prompt analyzes your official Instagram data export: how often you post, when you post, your captions, who your audience is, and your best and worst posts. It works in any AI chat — ChatGPT, Claude, DeepSeek.</p>
+<p>What makes it different from the prompts going around online: it doesn’t make up numbers. It only uses what’s actually in your export and tells you honestly what isn’t there.</p>
+<p>Just three steps. Start the first one right now — the export doesn’t arrive instantly.</p>
+<h2 id="step-1-request-your-export">Step 1. Request your export</h2>
+<p>Instagram → <strong>Settings</strong> → <strong>Your information and permissions</strong> → <strong>Download your information</strong> → “Download or transfer information” → choose your account → <strong>Some of your information</strong> → tick <em>Posts</em>, <em>Reels</em> and <em>Insights</em> → <strong>Download to device</strong>.</p>
+<p>Then three settings. Nothing works without them:</p>
+<ul>
+<li><strong>Format — JSON.</strong> Not HTML. It’s a separate switch, and HTML is the default.</li>
+<li><strong>Date range — “All time”.</strong></li>
+<li><strong>Media quality — low.</strong> Otherwise the archive weighs gigabytes, and you don’t need the photos for the analysis.</li>
+</ul>
+<p>The email with the link arrives anywhere from a few minutes to a couple of days. You’ll get a zip archive — unzip it.</p>
+<h2 id="step-2-pick-the-files">Step 2. Pick the files</h2>
+<p>There’s no point uploading the whole archive: it weighs gigabytes, and no chat will take that much. You need a few small files from two folders.</p>
+<h3 id="basic-set--4-files-about-30-kb-in-total">Basic set — 4 files, about 30 KB in total</h3>
+<p>Works in any chat, including free DeepSeek.</p>
+<ul>
+<li><code>logged_information/past_instagram_insights/audience_insights.json</code></li>
+<li><code>logged_information/past_instagram_insights/profiles_reached.json</code></li>
+<li><code>logged_information/past_instagram_insights/content_interactions.json</code></li>
+<li><code>logged_information/past_instagram_insights/videos.json</code></li>
+</ul>
+<h3 id="extended-set--plus-two-more-files">Extended set — plus two more files</h3>
+<p>Add them if you use ChatGPT or Claude: they can read large files. In free DeepSeek these two won’t fit — it will quietly cut them and count only half, so stick to the basic set there.</p>
+<ul>
+<li><code>logged_information/past_instagram_insights/posts.json</code> — metrics for your photo posts</li>
+<li><code>your_instagram_activity/media/reels.json</code> — dates, captions and music of your Reels</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>About <code>reels.json</code>.</strong> Besides your captions, it contains the GPS coordinates of where you filmed and your phone’s ID. Uploading it means handing that to the chat. If you’d rather not, leave <code>reels.json</code> out — everything else will still be counted.</p>
+</blockquote>
+<blockquote>
+<p>🔒 <strong>Don’t upload the whole archive, and don’t post it anywhere.</strong> It contains your phone number, email, date of birth, phone contacts, login history with IP addresses and your messages. You need exactly the files listed above.</p>
+</blockquote>
+<p><strong>If there’s no <code>past_instagram_insights</code> folder in the archive</strong>, you have a personal account, not a professional one: Instagram didn’t collect stats for it. Upload <code>reels.json</code> — the analysis will cover how you post, without reach numbers. The prompt knows this and will say so.</p>
+<h2 id="step-3-copy-the-prompt">Step 3. Copy the prompt</h2>
+<p>Copy everything in the box and paste it into the chat together with the files. There’s one thing to fill in — your time zone, at the very bottom.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>You are an Instagram analyst. You are analyzing my official data export.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>THE MAIN RULE</span></span>
+<span class="line"><span>Every number in your answer comes from the uploaded files. If a number isn't in the</span></span>
+<span class="line"><span>files, write "not in the export" and move on. Don't estimate, don't guess, don't use</span></span>
+<span class="line"><span>"Instagram averages". A made-up number is worse than a missing one. Every table has a</span></span>
+<span class="line"><span>"source" column (file → field); don't repeat sources in the text.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>HOW TO READ THESE FILES — eight quirks of the format; each one silently gives a wrong</span></span>
+<span class="line"><span>result if you miss it</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. Field names may look like Latin letters with diacritics (Ã, Ð, Ñ and similar). That's</span></span>
+<span class="line"><span>   UTF-8 read as latin-1, not corruption: re-decode it (latin-1 → UTF-8). Names are in</span></span>
+<span class="line"><span>   the account's interface language, whatever it is; some may be in English. Rely on the</span></span>
+<span class="line"><span>   structure, not on the words in the names.</span></span>
+<span class="line"><span>2. A missing metric is "--" or an empty string, NOT zero. That's how posts from before the</span></span>
+<span class="line"><span>   account went professional are marked. For each metric, drop those records, count what's</span></span>
+<span class="line"><span>   left and say how many records the number is based on.</span></span>
+<span class="line"><span>3. Numbers are stored as strings with thousands separators: "1,049" is one thousand and</span></span>
+<span class="line"><span>   forty-nine. The separator can be a comma, a dot or a space. Parse percentages and</span></span>
+<span class="line"><span>   compound strings ("United States: 41.2%, United Kingdom: 9%") carefully.</span></span>
+<span class="line"><span>4. A post's date is in media_map_data → creation_timestamp, not in the "creation</span></span>
+<span class="line"><span>   timestamp" field (it's empty for every post). If media_map_data is empty, there's no</span></span>
+<span class="line"><span>   date: count those records and don't drop them silently.</span></span>
+<span class="line"><span>5. Records have different sets of fields. Don't drop a record because one field is missing.</span></span>
+<span class="line"><span>6. Timestamps are Unix seconds in UTC. Convert them to my time zone (it's at the bottom).</span></span>
+<span class="line"><span>   If it's not filled in, use the time zone of my followers' most common city from</span></span>
+<span class="line"><span>   audience_insights.json and say which one you used.</span></span>
+<span class="line"><span>7. audience_insights, profiles_reached, content_interactions hold one record each: a</span></span>
+<span class="line"><span>   snapshot of the last 90 days, not history. Don't build trends from them; take the</span></span>
+<span class="line"><span>   "vs previous period" percentages inside them as they are.</span></span>
+<span class="line"><span>8. There are no Reels metrics in the export: reels.json has only dates, captions and music.</span></span>
+<span class="line"><span>   videos.json is the old video format, not Reels. The only Reels data is the 90-day</span></span>
+<span class="line"><span>   totals of likes, comments, shares and saves in content_interactions.json; don't present</span></span>
+<span class="line"><span>   them as metrics of individual reels.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>STEP 1. INVENTORY — before any analysis</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>A table: file | records | period | what's inside. Then:</span></span>
+<span class="line"><span>— Integrity: every JSON is read to the end and closed. If one is cut off, name it and</span></span>
+<span class="line"><span>  don't count anything from it.</span></span>
+<span class="line"><span>— Completeness: if there's no past_instagram_insights folder, I have a personal account</span></span>
+<span class="line"><span>  and the metrics don't exist. Say so plainly and work only with the structure of my posts.</span></span>
+<span class="line"><span>— Which sections are unavailable. AUDIENCE needs audience_insights and profiles_reached;</span></span>
+<span class="line"><span>  RHYTHM, TIMING, CAPTIONS need posts.json and/or reels.json; POSTS AND VIDEOS need</span></span>
+<span class="line"><span>  posts.json and videos.json; REELS needs reels.json. Name what you can't do and don't</span></span>
+<span class="line"><span>  replace it with guesses.</span></span>
+<span class="line"><span>— How many records were dropped under the "--" rule, and from which years.</span></span>
+<span class="line"><span>End with a list: "What this data doesn't have".</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>COUNTING RULES</span></span>
+<span class="line"><span>— A difference under 5% is noise: write "no difference". Activity by weekday is usually</span></span>
+<span class="line"><span>  flat, so "post on Tuesdays" doesn't follow from it.</span></span>
+<span class="line"><span>— Fewer than 10 observations is an observation, not a conclusion; say how many records.</span></span>
+<span class="line"><span>— Correlation isn't causation: "posts with a question got more" — write exactly that, not</span></span>
+<span class="line"><span>  "the question worked".</span></span>
+<span class="line"><span>— No judgments without a number next to them ("great result").</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>STEP 2. ANALYSIS — each section up to 120 words plus one table of up to 10 rows</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1. RHYTHM. Posts by year and month, posts and Reels separately. Gaps longer than a month</span></span>
+<span class="line"><span>   and what happened after them. The busiest and the emptiest period.</span></span>
+<span class="line"><span>2. TIMING. Weekday and hour of posting in my time zone, posts and Reels separately.</span></span>
+<span class="line"><span>   Compare with my followers' activity by day from audience_insights.json — remember the</span></span>
+<span class="line"><span>   5% rule. There's no hourly activity in the export.</span></span>
+<span class="line"><span>3. AUDIENCE. Location, age, gender, share of followers and non-followers in reach. If</span></span>
+<span class="line"><span>   captions are uploaded, name the gap between who the content is made for and who</span></span>
+<span class="line"><span>   follows. If reach comes mostly from non-followers, explain what that means.</span></span>
+<span class="line"><span>4. CAPTIONS. Length, question, call to action, hashtags. Compare with metrics only for</span></span>
+<span class="line"><span>   posts that have metrics. For Reels, structure only.</span></span>
+<span class="line"><span>5. POSTS AND VIDEOS. Top 5 and bottom 5 by reach, separately by saves and by profile</span></span>
+<span class="line"><span>   visits; for videos from videos.json, by views. Only records that have the metric, and</span></span>
+<span class="line"><span>   say how many they were picked from. Don't rank if there are fewer than 10 non-zero</span></span>
+<span class="line"><span>   values; if the maximum is under 10, say the difference is in single digits and no</span></span>
+<span class="line"><span>   decisions should be based on it. For each record: date, number, first words of the</span></span>
+<span class="line"><span>   caption.</span></span>
+<span class="line"><span>6. REELS. No metrics, only structure: how many, how often, days and hours, caption length,</span></span>
+<span class="line"><span>   hashtags, music. First say how many reels have each field filled in at all, then draw</span></span>
+<span class="line"><span>   conclusions from the filled ones. End with one paragraph on how to add views by hand:</span></span>
+<span class="line"><span>   copy them from the profile grid into a "date — views" table and send it in the next</span></span>
+<span class="line"><span>   message, and you'll match them with reels.json.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>STEP 3. DECISIONS</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>5–7 of them. Each is one action plus the number from the analysis that makes you suggest</span></span>
+<span class="line"><span>it. No number, no decision. If data is missing, say which number and where to get it.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>The last line of your answer: "Say 'build the dashboard' if you want the same thing on</span></span>
+<span class="line"><span>one page with charts." The dashboard only on request and only from the numbers in this</span></span>
+<span class="line"><span>analysis.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>MY DETAILS</span></span>
+<span class="line"><span>Time zone: ___ (e.g. UTC-5 New York)</span></span>
+<span class="line"><span>Answer language: English</span></span></code></pre>
+<h2 id="if-something-doesnt-add-up">If something doesn’t add up</h2>
+<p>DM me on Instagram <a href="https://instagram.com/itsnchmurova">@itsnchmurova</a> — I’ll reply.</p>
+<p>A common one: if the chat says a file is corrupted or the field names are unreadable, that’s expected — Instagram exports field names in a broken encoding. The prompt accounts for it, just let it finish.</p>
+</div><p class="from">25/09/2026</p></div></article></section><section class="section"><div class="section-head"><h2>More useful</h2></div><div class="cards"><article class="card"><img class="card-thumb" src="/img/links/devday-2026.jpg?v=272627af" alt="" width="84" height="84" loading="lazy"><div><div class="chips"><span class="chip topic">news</span></div><h3><a href="/en/links/devday-2026/">OpenAI DevDay 2026 — the full keynote</a></h3><p class="why">The recording my video is based on. 53 minutes, in English</p><p class="from">from the reel: <a href="https://www.instagram.com/reel/Dd9OhnGOxld/" target="_blank" rel="noopener">Instagram</a> · <a href="https://youtube.com/shorts/RgJfxJEd9OI" target="_blank" rel="noopener">YouTube</a> · 01/10/2026</p></div></article><article class="card"><div class="card-thumb placeholder" aria-hidden="true">M</div><div><div class="chips"><span class="chip topic">tools</span></div><h3><a href="/en/links/top-tools/">My top AI tools</a></h3><p class="why">The tools I use for different jobs — writing, fact-checking, generating and editing video — with my honest ratings</p><p class="from">30/09/2026</p></div></article><article class="card"><div class="card-thumb placeholder" aria-hidden="true">M</div><div><div class="chips"><span class="chip topic">claude</span></div><h3><a href="/en/links/claude-mods/">Mods for Claude</a></h3><p class="why">How to turn on mods in Claude Code and which ones to install first — an arcade and a breathing exercise while Claude thinks</p><p class="from">23/09/2026</p></div></article></div></section><script type="module">var e=document.documentElement.lang===`en`,t=e?`Copy`:`Скопировать`,n=e?`Copied`:`Скопировано`;document.querySelectorAll(`.card-body pre`).forEach(e=>{let r=document.createElement(`div`);r.className=`code-bar`;let i=document.createElement(`button`);i.type=`button`,i.className=`copy`,i.textContent=t,i.addEventListener(`click`,async()=>{let r=(e.querySelector(`code`)??e).textContent??``;try{await navigator.clipboard.writeText(r)}catch{let e=document.createElement(`textarea`);e.value=r,document.body.appendChild(e),e.select(),document.execCommand(`copy`),e.remove()}i.textContent=n,setTimeout(()=>i.textContent=t,1800)}),r.appendChild(i),e.classList.add(`has-bar`),e.parentElement?.insertBefore(r,e)});</script></main><footer class="site-footer"><a href="https://www.instagram.com/itsnchmurova/" target="_blank" rel="noopener">@itsnchmurova</a><a href="https://www.youtube.com/@n.chmurova" target="_blank" rel="noopener">YouTube</a><a href="https://www.linkedin.com/in/natalia-chmurova-70157b182/" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:natalia.chmurova@icloud.com">Email</a><span>© 2026 Natalia Chmurova</span></footer></body></html>
